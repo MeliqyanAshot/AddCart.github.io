@@ -1,0 +1,693 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(rgb(33, 95, 33),white);
+}
+
+header .cart-items{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0vw;
+    right: 0vw;
+    background: white;
+    overflow: scroll;
+    display: none;
+    z-index: 10;
+} 
+
+.cart-item{
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    top: 5vw;
+    border-bottom: 1px solid green;
+}
+
+.text{
+    position: relative;
+    left: -12vw;
+    top: 2vw;
+    font-size: 2vw;
+    color: green;
+}
+
+.N{
+    position: absolute;
+    left: 6vw;
+    top: 16vw;
+    font-size: 2vw;
+    color: white;
+}
+
+
+.plus{
+    position: absolute;
+    width: 2vw;
+    left: 10vw;
+    top: 16vw;
+    font-size: 2vw;
+    color: red;
+}
+
+.PQ{
+    position: absolute;
+    left: 17vw;
+    top: 16.5vw;
+    font-size: 2vw;
+    color: red;
+}
+
+.minus{
+    position: absolute;
+    width: 2vw;
+    left: 2vw;
+    top: 16vw;
+    font-size: 2vw;
+    color: red;
+    z-index: 999999999 !important;
+}
+
+
+.remove{
+    position: absolute;
+    right: 5vw;
+    top: 16.5vw;
+    width:10vw;
+    font-size: 1.5vw;
+    color: red;
+}
+header .total-price{
+    position: absolute;
+    position: fixed;
+    top: 0vw;
+    left: 35vw;
+    z-index: 10;
+    opacity: 0;
+    color: green;
+    font-size: 4vw;
+} 
+
+
+
+.boxButton{
+    position: absolute;
+    position: fixed;
+    width: 6vw;
+    height: 7vw;
+    top: 0vw;
+    right: 1%;
+    background: url("img/c.png");
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 0vw;
+    display: block;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1000 !important;
+} 
+
+.right{
+    position: absolute;
+    width: 30vw;
+    height: 20vw;
+    top: 10vw;
+    left: 5vw;
+    background: url('img/d.png');
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.left{
+    position: absolute;
+    width: 30vw;
+    height: 20vw;
+    top: 10vw;
+    right: 5vw;
+    background: url('img/s.jpg');
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.bottom{
+    position: absolute;
+    width: 40vw;
+    height: 20vw;
+    top: 17vw;
+    right: 30vw;
+    background: url('img/hxx.png');
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.S{
+position: absolute;
+color: white;
+font-size: 3vw;
+left: 45vw;
+}
+
+.qes{
+    position: absolute;
+    width: 20vw;
+    height: 15vw;
+    top: 4vw;
+    left: 39vw;
+    background: linear-gradient(rgba(255, 255, 255, 0),rgb(33, 95, 33));
+    border-bottom-left-radius: 50vw;
+    border-bottom-right-radius: 50vw;
+}
+#Simg{
+    position: absolute;
+    width: 19vw;
+    height: 18vw;
+    top: -1.5vw;
+    left: 0.5vw;
+    border-radius: 50px;
+}
+
+.work{
+    position: absolute;
+    color: white;
+    width: 20vw;
+    height: 2vw;
+    top: 1vw;
+    left: 0.5vw;
+}
+
+.work .p{
+    position: absolute;
+    width: 25vw;
+    height: 2vw;
+    top: 0vw;
+    left: 0vw;
+    font-size: 1.3vw;
+}
+
+
+.work h3{
+    position: absolute;
+    width: 10vw;
+    top: 0.2vw;
+    left: 20vw;
+    font-size: 1.3vw;
+    
+}
+
+
+.menue{
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    top: 37vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0rem 5vw;
+    color: white;
+    font-size: 3vw;
+    background: linear-gradient(white,rgb(33, 95, 33),white);
+}
+
+.menue .aboute:hover{
+    font-size: 2vw;
+    transition: 1s;
+}
+.menue .product:hover{
+    font-size: 2vw;
+    transition: 1s;
+}
+.menue .contact:hover{
+    font-size: 2vw;
+    transition: 1s;
+}
+.menue .location:hover{
+    font-size: 2vw;
+    transition: 1s;
+}
+
+.slider{
+    position: absolute;
+    width: 50vw;
+    height: 35vw;
+    top: 44vw;
+    left: 24vw;
+    background: url("img/0\ \(1\).jpg");
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.slider .prev{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    color: red;
+    font-size: 10vw;
+    top: 10vw;
+    right: -28vw;
+}
+
+.slider .next{
+    position: absolute;
+    color: red;
+    font-size: 10vw;
+    top: 10vw;
+    left: -15vw;
+}
+
+.hall{
+    position: absolute;
+    width: 50vw;
+    height: 30vw;
+    top: 80vw;
+    left: 1vw;
+    background: url("img/hx.png");
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+
+.formenue{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0vw;
+    right: 100vw;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10rem 3rem;
+    gap: 0rem;
+    background: white;
+
+}
+
+.formenue .exit{
+    position: absolute;
+    color: red;
+    font-size: 5vw;
+    top: 1vw;
+    left: 3vw;
+}
+
+.formenue .salat{
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    top: 0vw;
+    left: 0vw;
+    background: url("img/հունական_-_1-removebg-preview.png");
+    background-position: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    border-radius: 50px;
+    background: linear-gradient(rgb(33, 95, 33),white);
+    border: 1px solid white;
+}
+
+.formenue .salat p{
+    position: absolute;
+    left: 6vw;
+    top: -5vw;
+    font-size: 3vw;
+    color:white;
+}
+
+
+
+.forSalat{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    right: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10rem 0rem;
+    gap: 0rem;
+    background: white;
+    transition: 0.5s;
+    z-index: 9;
+}
+
+.forSalat .axcan{
+    position: absolute;
+    top: 0vw;
+    left: 38vw;
+    font-size: 6vw;
+    color:white;
+}
+
+.forSalat .saladBuy .product{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-left: 0vw;
+    border-radius: 20px;
+    transition: 2s;
+    background-color:white;
+ 
+}
+
+
+.forSalat .saladBuy .product h3{
+    color: red;
+}
+
+.forSalat .saladBuy .product p{
+    color: red;
+    font-size: 30px;
+}
+
+.forSalat .saladBuy .product .add-to-cart{
+    color: red;
+    font-size: 20px;
+
+}
+
+
+.forSalat .saladBuy{
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem 1rem;
+    gap: 10rem;
+}
+
+
+.forSalat #product button{
+    position: relative;
+    color: red;
+    width: auto;
+    top: 150px;
+    left: -200px;
+    font-size: 15px;
+}
+
+.forSalat #product span{
+  position: relative;
+  width: 100vw;
+  color: red;
+  top: 0px;
+  left: 0vw;
+  font-size: 18px;
+}
+
+.forSalat .saladBuy .dr{
+    position: relative;
+    color: red;
+    width: 100vw;
+    top: -35px;
+    left: 300px;
+    font-size: 25px;
+  }
+  
+  
+
+.forSalat .saladBuy .textOne{
+    position: relative;
+    color: red;
+    width: 100vw;
+    top: 1vw;
+    left: 0vw;
+    font-size: 18px;
+  }
+
+  .forSalat .saladBuy .textTwo{
+    position: relative;
+    color: red;
+    width: 100vw;
+    top: 2vw;
+    left: 0vw;
+    font-size: 18px;
+  }
+
+.forSalat .saladBuy .price{
+    position: relative;
+    color:red;
+    top: -10px;
+    right: -210px;
+    font-size: 40px;
+  }
+
+
+  .forSalat .saladBuy .quantitiProduct{
+    position: relative;
+    color:white;
+    top: -40px;
+    right: -210px;
+    font-size: 40px;
+  }
+  
+
+.forSalat .product > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0vw;
+    background-position: 100% 100% !important;
+    background-size:  100% 100% !important;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+
+
+
+.forSalat .saladBuy .add{
+    position: relative;
+    font-size: 3vw;
+    left: 0vw;
+    margin-top: 0vw;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+.forSalat .exit{
+    position: absolute;
+    color: red;
+    font-size: 10vw;
+    top: -4vw;
+    left: 4vw;
+}
+
+
+
+
+
+
+.aboutMenu{
+position: absolute;
+width: 100vw;
+height: 100vw;
+top: 0vw;
+left: 150vw;
+background: white;
+}
+
+
+.aboutMenuClose{
+color: red;
+font-size: 3vw;
+}
+
+
+
+.aboutMenu .ABtext{
+position: absolute;
+width: 40vw;
+height: 50vw;
+left: 5vw;
+}
+
+.aboutMenu .ABtextTwo{
+    position: absolute;
+    width: 80vw;
+    height: 50vw;
+    top: 70vw;
+    left: 5vw;
+    }
+    
+
+.abMenuImg{
+position: absolute;
+width: 40vw;
+height: 40vw;
+right: 5vw;
+}
+
+
+
+
+.contact-form {
+    position: absolute;
+    background-color: white;
+    width: 40vw;
+    height: auto;
+    top: 4vw;
+    left: 5vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: red;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #responseMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+  } 
+
+
+.contactM{
+position: absolute;
+position: fixed;
+width: 100vw;
+height: 50vw;
+top: 0vw;
+left: 100vw;
+backdrop-filter: blur(30px);
+background: rgba(255, 255, 255, 0.279);
+}
+
+.infos{
+position: absolute;
+width: 30vw;
+height: 30vw;
+top: 5vw;
+right: 8vw;
+}
+
+
+.PhoneNumber{
+position: absolute;
+color: red;
+font-size: 3vw;
+right: 0vw;
+}
+
+.adressNumber{
+position: absolute;
+left: -4vw;
+color: red;
+font-size: 2vw;
+top: -vw;
+}
+
+.adressText{
+position: absolute;
+left: -4vw;
+color: red;
+font-size: 2vw;
+top: 5vw;
+}
+
+.adress{
+position: absolute;
+color: red;
+font-size: 2vw;
+top: 5vw;
+right: 0vw;
+}
+
+
+.contExit{
+position: absolute;
+color: red;
+top: 0vw;
+left: 1vw;
+font-size: 4vw;
+}
+
+
+
+
+.upMenu{
+position: relative;
+width: 100vw;
+height: 40vw;
+top: 80vw;
+}
+
+.upImg{
+width: 50vw;
+height: 35vw;
+left: 0vw;
+}
+
+.uptext{
+position: absolute;
+width: 45vw;
+height: 30vw;
+right: 3vw;
+top: 0vw;
+}

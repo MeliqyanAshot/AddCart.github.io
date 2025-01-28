@@ -1,0 +1,16 @@
+
+
+
+@media screen and (max-width: 300px){
+    .forSalat .forPluseMinus{
+        position: relative;
+        width: 30vw;
+        height: 10vw;
+        left: 40vw;
+        top: -14.5vw;
+        font-size: 10vw;
+        border-radius: 10px;
+        background-color: rgb(98, 0, 0);
+    }
+    
+}
