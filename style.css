@@ -107,9 +107,9 @@ header .total-price{
     position: absolute;
     position: fixed;
     width: 6vw;
-    height: 7vw;
-    top: 0vw;
-    right: 1%;
+    height: 6vw;
+    top: 1vw;
+    right: 2vw;
     background: url("img/c.png");
     background-position: 100% 100% !important;
     background-size: 100% 100% !important;
@@ -669,25 +669,3 @@ font-size: 4vw;
 }
 
 
-
-
-.upMenu{
-position: relative;
-width: 100vw;
-height: 40vw;
-top: 80vw;
-}
-
-.upImg{
-width: 50vw;
-height: 35vw;
-left: 0vw;
-}
-
-.uptext{
-position: absolute;
-width: 45vw;
-height: 30vw;
-right: 3vw;
-top: 0vw;
-}
